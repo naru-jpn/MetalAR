@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43AA8BF620215B2400C84056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8BF520215B2400C84056 /* AppDelegate.swift */; };
+		43AA8BF820215B2400C84056 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8BF720215B2400C84056 /* Shaders.metal */; };
+		43AA8BFB20215B2400C84056 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8BFA20215B2400C84056 /* Renderer.swift */; };
+		43AA8BFD20215B2400C84056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8BFC20215B2400C84056 /* ViewController.swift */; };
+		43AA8C0020215B2400C84056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AA8BFE20215B2400C84056 /* Main.storyboard */; };
+		43AA8C0220215B2400C84056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AA8C0120215B2400C84056 /* Assets.xcassets */; };
+		43AA8C0520215B2400C84056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AA8C0320215B2400C84056 /* LaunchScreen.storyboard */; };
+		43AA8C0E2021BF7E00C84056 /* MatrixOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8C0D2021BF7E00C84056 /* MatrixOperations.swift */; };
+		43AA8C1020230C4000C84056 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8C0F20230C4000C84056 /* Display.swift */; };
+		43AA8C1220230E3900C84056 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8C1120230E3900C84056 /* Context.swift */; };
+		43AA8C182023119500C84056 /* ShadersDisplay.metal in Sources */ = {isa = PBXBuildFile; fileRef = 43AA8C172023119500C84056 /* ShadersDisplay.metal */; };
+		43D7BFDE2027BF5200E0E85C /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7BFDD2027BF5200E0E85C /* ShutterButton.swift */; };
+		43D7BFE02027C40700E0E85C /* Shutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7BFDF2027C40700E0E85C /* Shutter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43AA8BF220215B2400C84056 /* MetalAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43AA8BF520215B2400C84056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43AA8BF720215B2400C84056 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		43AA8BF920215B2400C84056 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		43AA8BFA20215B2400C84056 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		43AA8BFC20215B2400C84056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43AA8BFF20215B2400C84056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43AA8C0120215B2400C84056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43AA8C0420215B2400C84056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43AA8C0620215B2400C84056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AA8C0720215B2400C84056 /* MetalAR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetalAR-Bridging-Header.h"; sourceTree = "<group>"; };
+		43AA8C0D2021BF7E00C84056 /* MatrixOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixOperations.swift; sourceTree = "<group>"; };
+		43AA8C0F20230C4000C84056 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		43AA8C1120230E3900C84056 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		43AA8C172023119500C84056 /* ShadersDisplay.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShadersDisplay.metal; sourceTree = "<group>"; };
+		43D7BFDD2027BF5200E0E85C /* ShutterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterButton.swift; sourceTree = "<group>"; };
+		43D7BFDF2027C40700E0E85C /* Shutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shutter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43AA8BEF20215B2400C84056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433CA19A20268C9F0058BBC6 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				43AA8BF720215B2400C84056 /* Shaders.metal */,
+				43AA8BFA20215B2400C84056 /* Renderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		43AA8BE920215B2300C84056 = {
+			isa = PBXGroup;
+			children = (
+				43AA8BF420215B2400C84056 /* MetalAR */,
+				43AA8BF320215B2400C84056 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43AA8BF320215B2400C84056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43AA8BF220215B2400C84056 /* MetalAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43AA8BF420215B2400C84056 /* MetalAR */ = {
+			isa = PBXGroup;
+			children = (
+				43AA8BF920215B2400C84056 /* ShaderTypes.h */,
+				43AA8BF520215B2400C84056 /* AppDelegate.swift */,
+				43AA8BFC20215B2400C84056 /* ViewController.swift */,
+				43AA8C1120230E3900C84056 /* Context.swift */,
+				43D7BFDC2027BF1200E0E85C /* UI */,
+				433CA19A20268C9F0058BBC6 /* Renderer */,
+				43AA8C1320230F3200C84056 /* MatrixOperations */,
+				43AA8BFE20215B2400C84056 /* Main.storyboard */,
+				43AA8C0120215B2400C84056 /* Assets.xcassets */,
+				43AA8C0320215B2400C84056 /* LaunchScreen.storyboard */,
+				43AA8C0620215B2400C84056 /* Info.plist */,
+				43AA8C0720215B2400C84056 /* MetalAR-Bridging-Header.h */,
+			);
+			path = MetalAR;
+			sourceTree = "<group>";
+		};
+		43AA8C1320230F3200C84056 /* MatrixOperations */ = {
+			isa = PBXGroup;
+			children = (
+				43AA8C0D2021BF7E00C84056 /* MatrixOperations.swift */,
+			);
+			path = MatrixOperations;
+			sourceTree = "<group>";
+		};
+		43D7BFDC2027BF1200E0E85C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				43AA8C172023119500C84056 /* ShadersDisplay.metal */,
+				43AA8C0F20230C4000C84056 /* Display.swift */,
+				43D7BFDF2027C40700E0E85C /* Shutter.swift */,
+				43D7BFDD2027BF5200E0E85C /* ShutterButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43AA8BF120215B2400C84056 /* MetalAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43AA8C0A20215B2400C84056 /* Build configuration list for PBXNativeTarget "MetalAR" */;
+			buildPhases = (
+				43AA8BEE20215B2400C84056 /* Sources */,
+				43AA8BEF20215B2400C84056 /* Frameworks */,
+				43AA8BF020215B2400C84056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalAR;
+			productName = MetalAR;
+			productReference = 43AA8BF220215B2400C84056 /* MetalAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43AA8BEA20215B2300C84056 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = naru;
+				TargetAttributes = {
+					43AA8BF120215B2400C84056 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 43AA8BED20215B2400C84056 /* Build configuration list for PBXProject "MetalAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43AA8BE920215B2300C84056;
+			productRefGroup = 43AA8BF320215B2400C84056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43AA8BF120215B2400C84056 /* MetalAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43AA8BF020215B2400C84056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43AA8C0520215B2400C84056 /* LaunchScreen.storyboard in Resources */,
+				43AA8C0220215B2400C84056 /* Assets.xcassets in Resources */,
+				43AA8C0020215B2400C84056 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43AA8BEE20215B2400C84056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43AA8C1020230C4000C84056 /* Display.swift in Sources */,
+				43D7BFE02027C40700E0E85C /* Shutter.swift in Sources */,
+				43AA8BF820215B2400C84056 /* Shaders.metal in Sources */,
+				43AA8BFB20215B2400C84056 /* Renderer.swift in Sources */,
+				43AA8C1220230E3900C84056 /* Context.swift in Sources */,
+				43AA8BFD20215B2400C84056 /* ViewController.swift in Sources */,
+				43AA8C182023119500C84056 /* ShadersDisplay.metal in Sources */,
+				43D7BFDE2027BF5200E0E85C /* ShutterButton.swift in Sources */,
+				43AA8BF620215B2400C84056 /* AppDelegate.swift in Sources */,
+				43AA8C0E2021BF7E00C84056 /* MatrixOperations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43AA8BFE20215B2400C84056 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43AA8BFF20215B2400C84056 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43AA8C0320215B2400C84056 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43AA8C0420215B2400C84056 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43AA8C0820215B2400C84056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43AA8C0920215B2400C84056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43AA8C0B20215B2400C84056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTG7MUN42X;
+				INFOPLIST_FILE = MetalAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpn.naru.MetalAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MetalAR/MetalAR-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43AA8C0C20215B2400C84056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QTG7MUN42X;
+				INFOPLIST_FILE = MetalAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpn.naru.MetalAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MetalAR/MetalAR-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43AA8BED20215B2400C84056 /* Build configuration list for PBXProject "MetalAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43AA8C0820215B2400C84056 /* Debug */,
+				43AA8C0920215B2400C84056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43AA8C0A20215B2400C84056 /* Build configuration list for PBXNativeTarget "MetalAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43AA8C0B20215B2400C84056 /* Debug */,
+				43AA8C0C20215B2400C84056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43AA8BEA20215B2300C84056 /* Project object */;
+}
