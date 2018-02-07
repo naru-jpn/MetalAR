@@ -146,7 +146,7 @@ class Display: UIView {
         commandBuffer.commit()
     }
     
-    // MARK: Create Image
+    // MARK: - Create Image
     
     /// Create and return image from last displayed texture.
     /// - returns: image created

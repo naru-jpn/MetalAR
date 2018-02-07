@@ -141,8 +141,6 @@ class Renderer {
         //   pipeline (App, Metal, Drivers, GPU, etc)
         let _ = inFlightSemaphore.wait(timeout: DispatchTime.distantFuture)
         
-        let time: TimeInterval = Date().timeIntervalSince1970
-        
         // Create a new command buffer for each renderpass to the current drawable
         guard let commandBuffer = commandQueue.makeCommandBuffer() else {
             inFlightSemaphore.signal()
@@ -173,7 +171,6 @@ class Renderer {
         let output: MTLTexture = device.makeTexture(descriptor: textureDescriptor)!
         
         commandBuffer.addCompletedHandler { [weak self] commandBuffer in
-            debugPrint(Date().timeIntervalSince1970 - time)
             if let strongSelf = self {
                 strongSelf.delegate?.renderer(strongSelf, didFinishProcess: output)
                 strongSelf.inFlightSemaphore.signal()
