@@ -56,7 +56,6 @@
 		433CA19A20268C9F0058BBC6 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
-				43AA8BF920215B2400C84056 /* ShaderTypes.h */,
 				43AA8BF720215B2400C84056 /* Shaders.metal */,
 				43AA8BFA20215B2400C84056 /* Renderer.swift */,
 			);
@@ -82,6 +81,7 @@
 		43AA8BF420215B2400C84056 /* MetalAR */ = {
 			isa = PBXGroup;
 			children = (
+				43AA8BF920215B2400C84056 /* ShaderTypes.h */,
 				43AA8BF520215B2400C84056 /* AppDelegate.swift */,
 				43AA8BFC20215B2400C84056 /* ViewController.swift */,
 				43AA8C1120230E3900C84056 /* Context.swift */,
