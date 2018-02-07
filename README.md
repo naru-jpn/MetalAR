@@ -2,16 +2,16 @@
 
 AR application sample using Metal without SceneKit.
 
+<kbd>
+<img src="https://user-images.githubusercontent.com/5572875/35907340-f9920480-0c30-11e8-8664-ed8aed216567.JPG" width="300" />
+</kbd>
+
 ## Features
 
 - [x] Render only by Metal
   - [x] Filter camera frame
   - [x] Draw objects in 3D space
 - [x] Take a picture on background
-
-<kbd>
-<img src="https://user-images.githubusercontent.com/5572875/35907340-f9920480-0c30-11e8-8664-ed8aed216567.JPG" width="300" />
-</kbd>
 
 ## Files contained project
 
